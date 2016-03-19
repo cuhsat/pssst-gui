@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+section {
+  padding: 15px 15px 64px 15px;
+}
+
+article {
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+footer {
+  background: inherit;
+  bottom: 0;
+  height: 64px;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+}

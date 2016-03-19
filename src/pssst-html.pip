@@ -1,0 +1,4 @@
+python >= 2.7
+pycrypto >= 2.6
+requests >= 2.7
+cherrypy >= 5.1
