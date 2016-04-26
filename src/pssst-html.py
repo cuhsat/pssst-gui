@@ -235,7 +235,7 @@ def main(script, arg="62222", *args):
             bower = os.path.join(os.path.dirname(__file__), "bower")
             pssst = os.path.join(os.path.dirname(__file__), "pssst")
 
-            cherrypy.quickstart(PssstHtml(CLI.profile("~"), tokenbin), "/", {
+            cherrypy.quickstart(PssstHtml(CLI.profile(), tokenbin), "/", {
                 "global": {
                     "server.socket_host": host,
                     "server.socket_port": port,
