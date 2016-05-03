@@ -3,7 +3,8 @@
   "dependencies": {
     "bootstrap": "~3.3",
     "cryptojslib": "~3.1",
+    "fontawesome": "~4.6",
     "jquery": "~2.2",
-    "requirejs": "~2.1"
+    "requirejs": "~2.2"
   }
 }

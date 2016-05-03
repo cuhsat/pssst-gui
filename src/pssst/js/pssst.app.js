@@ -76,10 +76,12 @@ define(['js/pssst.api.js'], function (api) {
       pull: function pull() {
         app.call('pull', null, function call(messages) {
           messages.forEach(function(data) {
+            data = data.replace(/\/(.*) /, '<i class="fa fa-$1"></i>&nbsp;');
+            data = data.replace('\n', '<br>');
             $('section').append(
               '<article class="panel panel-default">'
             + '  <div class="panel-body">'
-            +      data.replace('\n', '<br>')
+            +      data
             + '  </div>'
             + '</article>'
             );
